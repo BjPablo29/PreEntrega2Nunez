@@ -4,7 +4,7 @@ const products = [
       name: 'Alisado Biomolecular',
       price: 1100,
       category: 'Productos con Formol',
-      image: 'img/alisado-biomolecular.png',
+      image: '/img/alisado-biomolecular.png',
       description: 'Descripción del Alisado Biomolecular.',
     },
     {
@@ -12,7 +12,7 @@ const products = [
       name: 'Alisado con Bótox',
       price: 1200,
       category: 'Productos con Formol',
-      image: 'img/alisado-botox.png',
+      image: '/img/alisado-botox.png',
       description: 'Descripción del Alisado con Bótox.',
     },
     {
@@ -20,7 +20,7 @@ const products = [
       name: 'Alisado Cereza',
       price: 1300,
       category: 'Productos con Formol',
-      image: 'img/alisado-cereza.png',
+      image: '/img/alisado-cereza.png',
       description: 'Descripción del Alisado Cereza.',
     },
     {
@@ -28,7 +28,7 @@ const products = [
       name: 'Nanoplastía',
       price: 1400,
       category: 'Productos sin Formol',
-      image: 'img/nanoplastia.png',
+      image: '/img/nanoplastia.png',
       description: 'Descripción de la Nanoplastía.',
     },
     {
@@ -36,7 +36,7 @@ const products = [
       name: 'Nutrición Multivitamínica',
       price: 1500,
       category: 'Productos sin Formol',
-      image: 'img/nutricion-multi.png',
+      image: '/img/nutricion-multi.png',
       description: 'Descripción de la Nutrición Multivitamínica.',
     },
   ];

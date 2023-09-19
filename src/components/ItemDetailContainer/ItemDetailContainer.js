@@ -1,14 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getProducts } from '../../async-mocks/mocks';
+import { useStat, useEffect } from 'react';
 
 
 const ItemDetailContainer = () => {
+  const [product, setProduct] = useState ({})
   // Obtiene el parámetro de ruta ":id" para identificar el producto
   const { id } = useParams();
+  useEffect (() => {
+    getProducts ()
+    .then(data => {
+      setProduct(data.find((item) => item.id === Number(id)))
+    })
+  }, [id])
 
   // Busca el producto correspondiente en los mocks
-  const product = getProducts().find((item) => item.id === id);
 
   if (!product) {
     return <div>Producto no encontrado</div>;
