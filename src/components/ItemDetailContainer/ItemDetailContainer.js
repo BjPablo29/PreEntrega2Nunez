@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom';
 import { getProducts } from '../../async-mocks/mocks';
-import { useStat, useEffect } from 'react';
-
+import { useState, useEffect } from 'react';
 
 const ItemDetailContainer = () => {
   const [product, setProduct] = useState ({})
